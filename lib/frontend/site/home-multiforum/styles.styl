@@ -1,0 +1,277 @@
+@import './forum-container/styles.styl'
+@import './search/styles.styl'
+@import './search/results-search/styles.styl'
+
+.jumbotron_body
+  padding: 50px 0 !important
+  .container
+    .btn-primary:hover
+      background-color: #004060  
+    img
+      width: 30vw
+      @media screen and (max-width: 768px)
+        width: 70vw
+      @media screen and (max-width: 425px)
+        width: 90vw
+      @media screen and (max-width: 375px)
+        width: 90vw
+    .lead
+      font-size:18px
+      margin-top: 5px
+      &.highlight
+        font-size:22px
+        font-weight: 400
+        text-shadow: none !important
+      span
+        color:$main-color
+    .participar
+      margin-top: 1rem
+      margin: 10px;
+      background-color: $main-color;
+.ext-site-home-multiforum
+  background: transparent
+
+  .forums-list
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    padding-top: 1em
+
+    .forums-list-title
+      color: $primary-color
+      font-size: 35px
+      text-align: center
+      font-weight: 500
+      margin-bottom: 20px
+      text-transform: uppercase
+
+    .forums-list-item
+      max-width: 100%
+      width: 100%
+      margin: 0 10px 20px
+
+      @media (min-width: 992px)
+        width: 440px
+
+  .cover
+    text-align: center
+
+    h1
+      max-width: 500px
+      margin: 0 auto .3em
+
+  .arrow-down
+    background-size: cover
+    background-repeat: no-repeat
+    display: inline-block
+    margin-top: 0
+    margin-right: 3%
+    width: 70px
+    height: 55px
+    margin-bottom:20px
+    @media screen and (max-width: 750px)
+      width: 40px
+      height: 30px
+      margin-top:25px
+
+  .lead-paragraph
+    font-family: 'formata-bold', sans-serif
+    margin-top: 1.5em
+    text-align: center
+    font-size: 20px
+    padding-left: 5%;
+    padding-right: 5%;
+    &.last
+      color: $main-color
+      font-weight:bold
+      flex-direction:column
+      justify-content:center
+
+    .bold {
+      font-weight: 700
+      color: #0577B0
+    }
+    & p{
+      font-family: 'Fira Sans', sans-serif;
+    }
+
+    .skyblue {
+      font-weight: 500;
+    }
+  .arrow
+    text-align:center
+
+
+
+  .section-icons
+    font-weight:600
+    margin-top:20px
+    .section-icon
+      display: inline-block
+      @media (max-width: 760px)
+        display:flex
+        flex-direction:column
+      width:30% !important
+      .icon
+        width:100px
+        float: left
+      .text
+        padding-left: 115px
+        @media (max-width: 760px)
+          padding-left:10px
+        padding-top: 10px
+        font-weight: 100
+        font-size: 14px
+    .text
+      font-family: 'Fira Sans', sans-serif
+      font-weight: 400
+      & h5
+          font-family: 'formata-medium', sans-serif
+  .icon-arrow-down
+    font-size: 20px
+    color: $main-color
+    cursor: pointer
+
+  .content-center
+    display: flex;
+    align-self: center;
+
+    .btn
+    .dropdown-element
+    .dropbtn
+      min-width:160px
+      padding: 5px 25px 5px 25px !important
+      margin: 0 5px
+      border-radius: 8px
+    
+    .dropbtn
+      @media (max-width: 700px)
+        background-color: #0DA872!important
+        color: #000!important
+
+    .btn-secondary
+      background-color: #fff
+      color: #0DA872
+      border: 1px solid #0DA872
+    .btn-active
+      text-underline: none
+      background-color: #0DA872
+      color: #000
+      &:focus
+        outline: none
+
+.dropbtn
+  width:150px
+  font-size:16px !important
+  @media (min-width: 701px)
+    display:none
+
+.dropdown-element:hover .dropdown-content
+  @media (max-width: 700px)
+    display: block
+
+.dropdown-content
+  @media (max-width: 700px)
+    li
+      display:block
+      margin-bottom:0
+
+.dropdown-content
+  @media (max-width: 700px)
+    display: none
+    position: absolute
+    z-index: 1
+    left: -14px
+    top: 36px
+
+.dropdown-element
+  @media (max-width: 700px)
+    position: relative
+    display: inline-block
+
+.small-arrow
+  font-size:9px !important
+
+.show-more
+  height: 50px
+
+.cards 
+  display: flex
+  flex-direction: row
+  justify-content: space-evenly
+  flex-wrap: wrap
+
+.card 
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  box-shadow: 0px 4.51316px 11.2829px rgba(0, 0, 0, 0.25)
+  border-radius: 5.64145px
+  padding: 30
+  text-align: center
+  img 
+    height: 175
+    width: 175
+
+.separador
+  margin-top: 50px
+  width: 100%
+  height: 13
+  background: linear-gradient(90deg, #83548E 0%, #59AC42 27.08%, #00B5E3 51.04%, #59AC42 75.52%, #83548E 100%)
+
+
+.filter-container
+  .dropdown-content
+      .btn-item-dropdown.btn-active
+        @media (max-width: 700px)
+          display:none;
+
+.modal-terminos
+  display none
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100vh
+  background-color: rgba(255, 255, 255, .75)
+  z-index 999
+
+.ds-block
+  display block
+
+.modal-terminos-container
+  position relative
+  top: 25%
+  max-width: 600px
+
+.modal-terminos-content
+  position relative
+  background-color white
+  border 3px solid #59AC42
+  border-radius 20px
+  text-align: right
+  padding: 1rem
+
+.modal-terminos-body
+  position: relative
+  text-align center
+  p
+    padding 1rem
+
+.modal-terminos-accept
+  background: #0DA872;
+  border-radius: 5px;
+  border: none
+  color white
+  padding .5rem 2rem
+  cursor pointer
+
+.modal-terminos-x
+  text-align: right
+  padding 0
+  background: 0 0;
+  border: none;
+  -webkit-appearance: none;
+  font-size: 24px
+  // cursor pointer
